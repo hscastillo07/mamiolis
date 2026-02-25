@@ -1,0 +1,28 @@
+.container-shell {
+  width: min(var(--content-max), calc(100% - 1.5rem));
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container-shell {
+    width: min(var(--content-max), calc(100% - 2.5rem));
+  }
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.64));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+}
+
+.section-frame {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-panel);
+  background: rgba(248, 243, 234, 0.72);
+  box-shadow: var(--shadow-soft);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
