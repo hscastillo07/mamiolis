@@ -3,15 +3,15 @@ import { useState } from "react";
 import { navigationItems } from "@/content/navigation";
 import { useScrollSection } from "@/hooks/useScrollSection";
 import { CtaButton } from "@/components/shared/CtaButton";
-import { contactInfo } from "@/content/contact";
+//import { contactInfo } from "@/content/contact";
 import { homeContent } from "@/content/home";
-import { buildWhatsAppUrl } from "@/lib/utils";
+//import { buildWhatsAppUrl } from "@/lib/utils";
 import { cn } from "@/lib/cn";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const activeSection = useScrollSection();
-  const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
+  //const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
 
   return (
     <header className="sticky top-0 z-40 pt-3">
@@ -47,9 +47,9 @@ export function Header() {
             </nav>
 
             <div className="hidden md:block">
-              <CtaButton href={whatsappUrl} target="_blank" rel="noreferrer" variant="warm" size="sm">
+              {/* <CtaButton href={whatsappUrl} target="_blank" rel="noreferrer" variant="warm" size="sm">
                 {homeContent.ctaLabels.whatsapp}
-              </CtaButton>
+              </CtaButton> */}
             </div>
 
             <button
@@ -76,7 +76,7 @@ export function Header() {
                     {item.label}
                   </a>
                 ))}
-                <CtaButton
+                {/*<CtaButton
                   href={whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
@@ -84,7 +84,7 @@ export function Header() {
                   className="mt-2 w-full justify-center"
                 >
                   {homeContent.ctaLabels.whatsapp}
-                </CtaButton>
+                </CtaButton>*/}
               </nav>
             </div>
           ) : null}

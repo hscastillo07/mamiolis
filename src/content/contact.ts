@@ -1,8 +1,8 @@
 import type { ContactLinks } from "@/types/contact";
 
 export const contactInfo: ContactLinks = {
-  whatsappNumber: "573000000000",
-  whatsappMessageDefault: "Hola, quiero informacion sobre Mami Oli's / ECOS y disponibilidad.",
+ // whatsappNumber: "573000000000",
+ // whatsappMessageDefault: "Hola, quiero informacion sobre Mami Oli's / ECOS y disponibilidad.",
   googleMapsUrl: "https://maps.google.com",
   menuUrl: "/documents/menu.pdf",
   instagramUrl: "https://instagram.com/",

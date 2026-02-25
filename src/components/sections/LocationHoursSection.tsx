@@ -29,9 +29,9 @@ export function LocationHoursSection() {
                 <MapPin className="h-4 w-4" />
                 Como llegar
               </CtaButton>
-              <CtaButton href={`tel:+${contactInfo.whatsappNumber.replace(/\D+/g, "")}`} variant="ghost">
+             {/*<CtaButton href={`tel:+${contactInfo.whatsappNumber.replace(/\D+/g, "")}`} variant="ghost">
                 Llamar
-              </CtaButton>
+              </CtaButton>*/}
             </div>
           </Reveal>
 

@@ -4,7 +4,7 @@ import { contactInfo } from "@/content/contact";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 export function Footer() {
-  const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
+  //const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
 
   return (
     <footer className="pb-24 pt-16 md:pb-12 md:pt-20">
@@ -16,7 +16,7 @@ export function Footer() {
               <p className="mt-3 max-w-2xl text-sm leading-7 text-[#5d554d]">{siteMeta.description}</p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <a
-                  href={whatsappUrl}
+                  //href={whatsappUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm text-[#312219] hover:bg-white"

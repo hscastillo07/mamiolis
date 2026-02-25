@@ -18,7 +18,7 @@ export const homeContent: HomeContent = {
     { id: "q4", text: "Un lugar para compartir, aprender y disfrutar." },
   ],
   ctaLabels: {
-    whatsapp: "Reservar por WhatsApp",
+   // whatsapp: "Reservar por WhatsApp",
     menu: "Ver menu",
     directions: "Como llegar",
     ecos: "Conocer ECOS",

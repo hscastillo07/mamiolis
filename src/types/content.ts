@@ -33,7 +33,7 @@ export interface HomeContent {
   storyBody: string[];
   quotes: QuoteItem[];
   ctaLabels: {
-    whatsapp: string;
+    //whatsapp: string;
     menu: string;
     directions: string;
     ecos: string;

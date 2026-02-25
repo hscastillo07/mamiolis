@@ -6,8 +6,11 @@ import { CtaButton } from "@/components/shared/CtaButton";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 export function HeroSection() {
-  const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
-
+  //const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
+ // <CtaButton href={whatsappUrl} target="_blank" rel="noreferrer" variant="warm" size="lg">
+ // <MessageCircle className="h-4 w-4" />
+  // {homeContent.ctaLabels.whatsapp}
+  // </CtaButton>
   return (
     <section id="inicio" className="relative overflow-hidden pt-6 md:pt-10">
       <div className="container-shell">
@@ -49,10 +52,9 @@ export function HeroSection() {
                 transition={{ duration: 0.55, delay: 0.12 }}
                 className="flex flex-col gap-3 sm:flex-row sm:flex-wrap"
               >
-                <CtaButton href={whatsappUrl} target="_blank" rel="noreferrer" variant="warm" size="lg">
-                  <MessageCircle className="h-4 w-4" />
-                  {homeContent.ctaLabels.whatsapp}
-                </CtaButton>
+
+
+
                 <CtaButton href="#menu" variant="ghost" size="lg">
                   <ArrowRight className="h-4 w-4" />
                   {homeContent.ctaLabels.menu}
