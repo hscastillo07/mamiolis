@@ -53,7 +53,7 @@ export function HeroSection() {
                 className="flex flex-col gap-3 sm:flex-row sm:flex-wrap"
               >
 
-
+                {/* <CTA WHATSAPP> */}
 
                 <CtaButton href="#menu" variant="ghost" size="lg">
                   <ArrowRight className="h-4 w-4" />
