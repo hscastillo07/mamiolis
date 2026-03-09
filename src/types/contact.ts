@@ -4,8 +4,8 @@ export interface ScheduleDay {
 }
 
 export interface ContactLinks {
- // whatsappNumber: string;
-  //whatsappMessageDefault: string;
+  whatsappNumber: string;
+  whatsappMessageDefault: string;
   googleMapsUrl: string;
   menuUrl: string;
   instagramUrl: string;
