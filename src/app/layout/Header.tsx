@@ -14,15 +14,15 @@ export function Header() {
   //const whatsappUrl = buildWhatsAppUrl(contactInfo.whatsappNumber, contactInfo.whatsappMessageDefault);
 
   return (
-    <header className="sticky top-0 z-40 pt-3">
+    <header className="sticky top-0 z-40 w-full border-b border-white/5 bg-gray-900/95 py-3 backdrop-blur-md shadow-lg">
       <div className="container-shell">
-        <div className="glass-panel rounded-2xl border border-white/35 px-3 py-2 md:px-4">
+        <div className="px-1 md:px-2">
           <div className="flex items-center justify-between gap-3">
-            <a href="#inicio" className="min-w-0 rounded-full px-2 py-1">
-              <p className="truncate font-serifDisplay text-xl leading-none text-[#241912] md:text-2xl">
+            <a href="#inicio" className="group min-w-0 transition-opacity hover:opacity-90">
+              <p className="truncate font-serifDisplay text-xl leading-none text-white md:text-2xl" style={{ fontFamily: 'var(--font-heading)' }}>
                 ECOS y Mami Oli's
               </p>
-              <p className="hidden text-[10px] uppercase tracking-[0.16em] text-[#746556] md:block">
+              <p className="hidden text-[10px] uppercase tracking-[0.2em] text-amber-300 md:block">
                 Terraza cultural
               </p>
             </a>
@@ -36,8 +36,10 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "rounded-full px-3 py-2 text-sm transition",
-                      isActive ? "bg-white text-[#241912] shadow-soft" : "text-[#61564c] hover:bg-white/60",
+                      "rounded-full px-4 py-2 text-sm font-medium transition-all duration-300",
+                      isActive
+                        ? "bg-white text-gray-900 shadow-glow"
+                        : "text-gray-300 hover:text-white hover:bg-white/10",
                     )}
                   >
                     {item.label}
@@ -54,7 +56,7 @@ export function Header() {
 
             <button
               type="button"
-              className="rounded-full border border-black/10 bg-white/70 p-2 text-[#2f221a] md:hidden"
+              className="rounded-full border border-white/10 bg-white/5 p-2 text-white transition-colors hover:bg-white/10 md:hidden"
               aria-label={open ? "Cerrar menu" : "Abrir menu"}
               aria-expanded={open}
               onClick={() => setOpen((prev) => !prev)}
@@ -63,31 +65,31 @@ export function Header() {
             </button>
           </div>
 
-          {open ? (
-            <div className="mt-3 border-t border-black/5 pt-3 md:hidden">
+          {open && (
+            <div className="mt-4 border-t border-white/10 pt-4 md:hidden">
               <nav className="grid gap-1" aria-label="Navegacion movil">
                 {navigationItems.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
-                    className="rounded-xl px-3 py-2 text-sm text-[#4e463f] hover:bg-white/70"
+                    className="rounded-xl px-4 py-2 text-sm font-medium text-gray-300 hover:bg-white/10 hover:text-white"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
                   </a>
                 ))}
                 {/*<CtaButton
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  variant="warm"
-                  className="mt-2 w-full justify-center"
-                >
-                  {homeContent.ctaLabels.whatsapp}
-                </CtaButton>*/}
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="warm"
+                    className="mt-2 w-full justify-center"
+                  >
+                    {homeContent.ctaLabels.whatsapp}
+                  </CtaButton>*/}
               </nav>
             </div>
-          ) : null}
+          )}
         </div>
       </div>
     </header>
