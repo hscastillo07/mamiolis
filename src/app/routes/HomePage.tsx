@@ -9,7 +9,6 @@ import { LocationHoursSection } from "@/components/sections/LocationHoursSection
 
 import { Community } from "@/components/sections/figma/Community";
 import { Experiences } from "@/components/sections/figma/Experiences";
-import { Footer } from "@/components/sections/figma/Footer";
 import { Hero } from "@/components/sections/figma/Hero";
 import { LanguageSchool } from "@/components/sections/figma/LanguageSchool";
 import { Quotes } from "@/components/sections/figma/Quotes";
@@ -35,7 +34,6 @@ export function HomePage() {
       <LanguageSchool />
       <Experiences />
       <Community />
-      <Footer />
     </>
   );
 }

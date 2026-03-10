@@ -33,26 +33,30 @@ export function Story() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-amber-100">
-                            <div className="text-5xl mb-4">🌍</div>
+                    <div className="grid grid-cols-2 gap-6">
+                        <div className="flex flex-col h-full bg-white p-8 rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300 border border-amber-100/50">
+                            <div className="text-5xl mb-6">🌍</div>
                             <h3 className="text-2xl mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                                 ECOS
                             </h3>
-                            <p className="text-gray-600 text-sm">Escuela Internacional de Idiomas</p>
+                            <p className="text-gray-600 text-sm leading-relaxed">Escuela Internacional de Idiomas</p>
                         </div>
 
-                        <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-rose-100 mt-8">
-                            <div className="text-5xl mb-4">🍽️</div>
+                        <div className="flex flex-col h-full bg-white p-8 rounded-2xl shadow-soft hover:shadow-lg transition-all duration-300 border border-rose-100/50">
+                            <div className="text-5xl mb-6">🍽️</div>
                             <h3 className="text-2xl mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                                 Mami Oli's
                             </h3>
-                            <p className="text-gray-600 text-sm">Terraza Cultural & Restaurante</p>
+                            <p className="text-gray-600 text-sm leading-relaxed">Terraza Cultural & Restaurante</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-amber-500 to-rose-500 p-8 rounded-2xl shadow-lg text-white col-span-2 -mt-4">
-                            <div className="text-4xl mb-3">✨</div>
-                            <p className="text-lg" style={{ fontFamily: 'var(--font-heading)' }}>
+                        <div className="bg-gradient-to-br from-amber-500 to-rose-500 p-8 rounded-2xl shadow-lg text-white col-span-2">
+                            <div className="flex items-center gap-4 mb-4">
+                                <div className="h-px flex-1 bg-white/20"></div>
+                                <div className="text-3xl">✨</div>
+                                <div className="h-px flex-1 bg-white/20"></div>
+                            </div>
+                            <p className="text-xl text-center italic leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>
                                 "Aprender, compartir y sentarse a la mesa transforma a las personas"
                             </p>
                         </div>
