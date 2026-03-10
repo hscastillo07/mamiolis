@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from "react";
 import { Header } from "@/app/layout/Header";
-import { Footer } from "@/app/layout/Footer";
+import { Footer } from "@/components/sections/figma/Footer";
 import { MobileStickyCta } from "@/app/layout/MobileStickyCta";
 
 export function PageShell({ children }: PropsWithChildren) {
