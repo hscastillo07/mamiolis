@@ -56,7 +56,7 @@ export function LanguageSchool() {
                             <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mb-8"></div>
 
                             <p className="text-xl text-gray-700 leading-relaxed mb-6 italic">
-                                "Languages. Culture. Community."
+                                Language. Culture. Community.
                             </p>
 
                             <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -66,9 +66,17 @@ export function LanguageSchool() {
                             </p>
 
                             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                                Nuestro método se basa en la <strong>inmersión cultural</strong> y el
-                                intercambio real. Cada clase es una oportunidad para conectar, descubrir
-                                y crecer junto a personas de todo el mundo.
+                                Nuestro método se basa en la <strong>inmersión cultural.</strong> Aquí el aprendizaje no ocurre solo en el salón de clases.
+                                Ocurre en las conversaciones, en las calles de la ciudad, y muchas veces alrededor de una mesa compartida.
+
+                            </p>
+                            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                                En nosotros encontrarás una escuela de idiomas que refleja poderosamente que aprender un idioma es
+                                también aprender a encontrarse con otras culturas.
+                            </p>
+                            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                                Por eso ECOS es más que una escuela.
+                                Es una comunidad internacional donde personas de distintos países se encuentran, aprenden juntas y crean amistades que cruzan fronteras.
                             </p>
                         </div>
 
