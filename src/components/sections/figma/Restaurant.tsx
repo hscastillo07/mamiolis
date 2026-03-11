@@ -24,19 +24,19 @@ export function Restaurant() {
                             <div className="w-24 h-1 bg-gradient-to-r from-rose-500 to-amber-500 rounded-full mb-8"></div>
 
                             <p className="text-xl text-gray-700 leading-relaxed mb-6 italic">
-                                "Sabor que evoluciona contigo"
+                                La mesa donde las historias comienzan
                             </p>
 
                             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                                Mami Oli's es más que un restaurante. Es un espacio donde la <strong>cocina con raíces</strong>
-                                se encuentra con la memoria y la cultura. Cada plato cuenta una historia,
-                                cada sabor evoca un recuerdo.
+                                Mami Oli's es más que un restaurante. Es una cocina donde los sabores del caribe colombiano se encuentran con la <strong>memoria, la tradición y el placer de compartir. </strong>
+                                Cada plato nace de recetas que guardan historia.
+                                Cada ingrediente local trae consigo el sabor de nuestra tierra.
+                                Y cada mesa se convierte en un lugar donde las personas se reúnen, conversan y crean nuevos recuerdos.
                             </p>
 
                             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                                Nuestra terraza se transforma en un lugar de encuentro donde la comida
-                                casera y auténtica se convierte en el centro de conversaciones, risas
-                                y nuevas amistades.
+                                En nuestra terraza, la cocina se transforma en el corazón del encuentro.
+                                Aquí estudiantes de distintos países, amigos, viajeros y familias descubren que la comida tiene el poder de abrir conversaciones y acercar culturas.
                             </p>
                         </div>
 

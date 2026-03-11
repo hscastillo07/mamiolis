@@ -31,13 +31,11 @@ export function LanguageSchool() {
                                 </div>
                             </div>
 
-                            <div className="absolute -top-6 -left-6 bg-emerald-600 text-white p-4 rounded-2xl shadow-xl">
-                                <p className="text-sm mb-1">Idiomas disponibles:</p>
-                                <div className="flex gap-2 text-2xl">
+                            <div className="absolute -top-6 -left-6 bg-emerald-600 text-white p-4 rounded-2xl shadow-xl text-center min-w-[140px]">
+                                <p className="text-sm mb-2">Idiomas disponibles:</p>
+                                <div className="flex justify-center gap-6 text-2xl">
                                     <span>🇪🇸</span>
                                     <span>🇬🇧</span>
-                                    <span>🇫🇷</span>
-                                    <span>🇩🇪</span>
                                 </div>
                             </div>
                         </div>
