@@ -35,8 +35,8 @@ export function Hero() {
                 </h1>
 
                 <p className="mb-12 text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-                    Una terraza cultural donde el aprendizaje de idiomas y la gastronomía
-                    se encuentran para crear experiencias auténticas de intercambio cultural.
+                    Terraza Fusión es el lugar donde la gastronomía de Mami Oli´s y el espíritu intercultural de ECOS
+                    se encuentran para crear experiencias auténticas de conexión entre personas de todo el mundo.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
