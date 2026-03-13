@@ -3,12 +3,12 @@ import type { ContactLinks } from "@/types/contact";
 export const contactInfo: ContactLinks = {
   whatsappNumber: "573000000000",
   whatsappMessageDefault: "Hola, quiero informacion sobre Mami Oli's / ECOS y disponibilidad.",
-  googleMapsUrl: "https://maps.google.com",
+  googleMapsUrl: "https://maps.app.goo.gl/a3NyowzEHwyK1Ngk7?g_st=ic",
   menuUrl: "/documents/menu.pdf",
   instagramUrl: "https://instagram.com/",
   facebookUrl: "https://facebook.com/",
   ecosUrl: "https://ecos.example.com",
-  address: "Direccion pendiente de confirmacion · Barranquilla, Colombia",
+  address: "CLL 26 #15-124 · Manga, Cartagena, Colombia",
   hours: [
     { label: "Lunes a viernes", hours: "7:00 AM - 9:00 PM" },
     { label: "Sabado", hours: "8:00 AM - 10:00 PM" },

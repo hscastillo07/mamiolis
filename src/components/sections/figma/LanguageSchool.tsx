@@ -1,9 +1,8 @@
 import { ImageWithFallback } from './ImageWithFallback';
 import placeholder from "../../../assets/mamiolis.jpeg";
+import { FEATURES } from '@/config/features';
 
 export function LanguageSchool() {
-    const learningImage = "https://images.unsplash.com/photo-1758270704787-615782711641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBsZWFybmluZyUyMGxhbmd1YWdlJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc3MjczNjA3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-
     return (
         <section id="escuela" className="py-24 px-6 bg-gradient-to-b from-white to-[#F0FFF4]">
             <div className="max-w-7xl mx-auto">
@@ -31,13 +30,7 @@ export function LanguageSchool() {
                                 </div>
                             </div>
 
-                            <div className="absolute -top-6 -left-6 bg-emerald-600 text-white p-4 rounded-2xl shadow-xl text-center min-w-[140px]">
-                                <p className="text-sm mb-2">Idiomas disponibles:</p>
-                                <div className="flex justify-center gap-6 text-2xl">
-                                    <span>🇪🇸</span>
-                                    <span>🇬🇧</span>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
 
@@ -106,9 +99,11 @@ export function LanguageSchool() {
                             </div>
                         </div>
 
-                        <button className="px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Más información
-                        </button>
+                        {FEATURES.showSchoolMoreInfo && (
+                            <button className="px-8 py-4 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                Más información
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>

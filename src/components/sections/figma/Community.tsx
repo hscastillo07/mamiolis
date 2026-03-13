@@ -1,9 +1,8 @@
 import { ImageWithFallback } from './ImageWithFallback';
 import placeholder from "../../../assets/mamiolis.jpeg";
+import { FEATURES } from '@/config/features';
 
 export function Community() {
-    const communityImage = "https://images.unsplash.com/photo-1766288019850-1cf72681be08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNvbW11bml0eSUyMGV2ZW50fGVufDF8fHx8MTc3MjczNjA3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-
     return (
         <section id="comunidad" className="py-24 px-6 bg-gradient-to-b from-white to-gray-50">
             <div className="max-w-7xl mx-auto">
@@ -81,16 +80,32 @@ export function Community() {
                         ¿Listo para formar parte de nuestra comunidad?
                     </h3>
                     <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-                        Ya sea que quieras aprender un nuevo idioma, disfrutar de buena comida
-                        o simplemente conocer gente increíble, te estamos esperando.
+                        Cada conversación puede comenzar en una lengua distinta,
+                        cada mesa reúne historias de diferentes lugares y
+                        cada encuentro se convierte en una experiencia que vale la pena recordar.
                     </p>
+                    <h5
+                        className="text-xl md:text-2xl lg:text-3xl mb-6"
+                        style={{ fontFamily: 'var(--font-heading)' }}
+                    >
+                        ¡La terraza siempre tiene un lugar para ti!
+                    </h5>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="px-8 py-4 bg-white text-indigo-600 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Conocer ECOS
-                        </button>
-                        <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105">
-                            Visitar Mami Oli's
-                        </button>
+                        {FEATURES.showCommunityECOSLink && (
+                            <a 
+                                href="https://wa.me/573015059936" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="px-8 py-4 bg-white text-indigo-600 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
+                            >
+                                Conocer ECOS
+                            </a>
+                        )}
+                        {FEATURES.showCommunityRestaurantLink && (
+                            <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105">
+                                Visitar Mami Oli's
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>

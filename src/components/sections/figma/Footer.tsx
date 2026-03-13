@@ -1,3 +1,5 @@
+import { FEATURES } from '@/config/features';
+
 export function Footer() {
     return (
         <footer className="bg-gray-900 text-white pt-16 pb-32 md:pb-16 px-6">
@@ -15,26 +17,33 @@ export function Footer() {
                             Una terraza cultural donde sabores, idiomas y culturas se encuentran
                             para crear experiencias auténticas de intercambio.
                         </p>
-                        <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                                <span>📘</span>
-                            </a>
-                            <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                                <span>📷</span>
-                            </a>
-                            <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
-                                <span>🐦</span>
-                            </a>
-                        </div>
+                        {FEATURES.showFooterSocialLinks && (
+                            <div className="flex gap-4">
+                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                                    <span>📘</span>
+                                </a>
+                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                                    <span>📷</span>
+                                </a>
+                                <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                                    <span>🐦</span>
+                                </a>
+                            </div>
+                        )}
                     </div>
 
                     {/* ECOS Links */}
                     <div>
                         <h4 className="mb-4">ECOS</h4>
                         <ul className="space-y-3 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">Cursos de español</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Cursos de inglés</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Inscripciones</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Quiénes somos</a></li>
+                            {FEATURES.showFooterEcosDetails && (
+                                <>
+                                    <li><a href="#" className="hover:text-white transition-colors">Cursos de español</a></li>
+                                    <li><a href="#" className="hover:text-white transition-colors">Cursos de inglés</a></li>
+                                    <li><a href="#" className="hover:text-white transition-colors">Inscripciones</a></li>
+                                </>
+                            )}
                         </ul>
                     </div>
 
@@ -42,10 +51,15 @@ export function Footer() {
                     <div>
                         <h4 className="mb-4">Mami Oli's</h4>
                         <ul className="space-y-3 text-gray-400">
-                            <li><a href="#" className="hover:text-white transition-colors">Menú</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Reservaciones</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Eventos</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Catering</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Nuestra historia</a></li>
+                            {FEATURES.showFooterRestaurantDetails && (
+                                <>
+                                    <li><a href="#" className="hover:text-white transition-colors">Menú</a></li>
+                                    <li><a href="#" className="hover:text-white transition-colors">Reservaciones</a></li>
+                                    <li><a href="#" className="hover:text-white transition-colors">Eventos</a></li>
+                                    <li><a href="#" className="hover:text-white transition-colors">Catering</a></li>
+                                </>
+                            )}
                         </ul>
                     </div>
                 </div>
@@ -71,10 +85,12 @@ export function Footer() {
                 {/* Bottom */}
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
                     <p>© 2026 ECOS & Mami Oli's. Todos los derechos reservados.</p>
-                    <div className="flex gap-6 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white transition-colors">Política de privacidad</a>
-                        <a href="#" className="hover:text-white transition-colors">Términos de uso</a>
-                    </div>
+                    {FEATURES.showFooterLegalLinks && (
+                        <div className="flex gap-6 mt-4 md:mt-0">
+                            <a href="#" className="hover:text-white transition-colors">Política de privacidad</a>
+                            <a href="#" className="hover:text-white transition-colors">Términos de uso</a>
+                        </div>
+                    )}
                 </div>
             </div>
         </footer>

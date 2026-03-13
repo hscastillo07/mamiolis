@@ -1,5 +1,7 @@
 import placeholder from "../../../assets/mamiolis.jpeg";
 import { ImageWithFallback } from './ImageWithFallback';
+import { FEATURES } from '@/config/features';
+
 export function Hero() {
     return (
         <div id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -40,12 +42,16 @@ export function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="px-8 py-4 bg-white text-gray-900 rounded-full hover:bg-amber-50 transition-all duration-300 transform hover:scale-105 shadow-xl">
-                        <span style={{ fontFamily: 'var(--font-body)' }}>Conoce la historia</span>
-                    </button>
-                    <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
-                        <span style={{ fontFamily: 'var(--font-body)' }}>Visita la terraza</span>
-                    </button>
+                    {FEATURES.showHeroStoryButton && (
+                        <button className="px-8 py-4 bg-white text-gray-900 rounded-full hover:bg-amber-50 transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            <span style={{ fontFamily: 'var(--font-body)' }}>Conoce la historia</span>
+                        </button>
+                    )}
+                    {FEATURES.showHeroVisitButton && (
+                        <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
+                            <span style={{ fontFamily: 'var(--font-body)' }}>Visita la terraza</span>
+                        </button>
+                    )}
                 </div>
             </div>
 

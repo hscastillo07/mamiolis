@@ -1,4 +1,5 @@
 import { Carousel } from '../../ui/Carousel';
+import { FEATURES } from '@/config/features';
 
 export function Experiences() {
     const experiences = [
@@ -110,11 +111,13 @@ export function Experiences() {
                     ))}
                 </Carousel>
 
-                <div className="mt-16 text-center">
-                    <button className="px-8 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-full hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                        Ver calendario de eventos
-                    </button>
-                </div>
+                {FEATURES.showEventsCalendar && (
+                    <div className="mt-16 text-center">
+                        <button className="px-8 py-4 bg-gradient-to-r from-violet-600 to-purple-600 text-white rounded-full hover:from-violet-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Ver calendario de eventos
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

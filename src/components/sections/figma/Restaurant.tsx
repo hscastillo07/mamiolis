@@ -2,6 +2,8 @@
 //import image_806b8a262b0fb6c301a55f6f14851b8fa5fa7ac8 from 'figma:asset/806b8a262b0fb6c301a55f6f14851b8fa5fa7ac8.png'
 import { ImageWithFallback } from './ImageWithFallback';
 import placeholder from "../../../assets/mamiolis.jpeg";
+import { FEATURES } from '@/config/features';
+
 export function Restaurant() {
     const foodImage = "https://images.unsplash.com/photo-1636600631971-f8e7dabb8c32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXRpbiUyMGFtZXJpY2FuJTIwZm9vZCUyMGNvbG9yZnVsfGVufDF8fHx8MTc3MjczNjA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
@@ -53,9 +55,11 @@ export function Restaurant() {
                             </div>
                         </div>
 
-                        <button className="px-8 py-4 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Ver menú
-                        </button>
+                        {FEATURES.showMenuButton && (
+                            <button className="px-8 py-4 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                Ver menú
+                            </button>
+                        )}
                     </div>
 
                     {/* Images */}
