@@ -23,7 +23,7 @@ export function Header() {
                 ECOS y Mami Oli's
               </p>
               <p className="hidden text-[10px] uppercase tracking-[0.2em] text-amber-300 md:block">
-                Terraza cultural
+                Terraza fusión
               </p>
             </a>
 
