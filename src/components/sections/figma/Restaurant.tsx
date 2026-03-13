@@ -63,7 +63,7 @@ export function Restaurant() {
                         <div className="space-y-4">
                             <div className="rounded-2xl overflow-hidden shadow-xl h-64">
                                 <ImageWithFallback
-                                    src={foodImage}
+                                    src="/images/mamiolis-servicio.webp"
                                     fallbackSrc={placeholder}
                                     alt="Mami Oli's Restaurant"
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
@@ -71,7 +71,7 @@ export function Restaurant() {
                             </div>
                             <div className="rounded-2xl overflow-hidden shadow-xl h-72">
                                 <ImageWithFallback
-                                    src={foodImage}
+                                    src="/images/mamiolis-mesas.webp"
                                     fallbackSrc={placeholder}
                                     alt="Delicious food"
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
@@ -81,7 +81,7 @@ export function Restaurant() {
                         <div className="mt-12">
                             <div className="rounded-2xl overflow-hidden shadow-xl h-96">
                                 <ImageWithFallback
-                                    src={foodImage}
+                                    src="/images/mamiolis-mesas-2.webp"
                                     fallbackSrc={placeholder}
                                     alt="Outdoor dining"
                                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"

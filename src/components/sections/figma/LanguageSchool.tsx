@@ -13,7 +13,7 @@ export function LanguageSchool() {
                         <div className="relative">
                             <div className="rounded-3xl overflow-hidden shadow-2xl">
                                 <ImageWithFallback
-                                    src={learningImage}
+                                    src="/images/ecos-servicio.webp"
                                     fallbackSrc={placeholder}
                                     alt="Language learning at ECOS"
                                     className="w-full h-[500px] object-cover"

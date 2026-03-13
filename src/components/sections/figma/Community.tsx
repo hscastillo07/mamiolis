@@ -58,7 +58,7 @@ export function Community() {
                     <div className="relative">
                         <div className="rounded-3xl overflow-hidden shadow-2xl">
                             <ImageWithFallback
-                                src={communityImage}
+                                src="/images/mamiolis-cartel.webp"
                                 fallbackSrc={placeholder}
                                 alt="Community gathering"
                                 className="w-full h-[600px] object-cover"
