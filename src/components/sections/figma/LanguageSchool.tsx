@@ -5,7 +5,7 @@ export function LanguageSchool() {
     const learningImage = "https://images.unsplash.com/photo-1758270704787-615782711641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBsZWFybmluZyUyMGxhbmd1YWdlJTIwY2xhc3Nyb29tfGVufDF8fHx8MTc3MjczNjA3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
     return (
-        <section className="py-24 px-6 bg-gradient-to-b from-white to-[#F0FFF4]">
+        <section id="escuela" className="py-24 px-6 bg-gradient-to-b from-white to-[#F0FFF4]">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Images */}

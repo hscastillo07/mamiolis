@@ -69,7 +69,7 @@ export function Experiences() {
     ];
 
     return (
-        <section className="py-24 px-6 bg-gradient-to-b from-[#F0FFF4] to-[#FFFAF5] overflow-hidden">
+        <section id="experiencias" className="py-24 px-6 bg-gradient-to-b from-[#F0FFF4] to-[#FFFAF5] overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="inline-block mb-4">

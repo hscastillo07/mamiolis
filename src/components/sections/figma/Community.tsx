@@ -5,7 +5,7 @@ export function Community() {
     const communityImage = "https://images.unsplash.com/photo-1766288019850-1cf72681be08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGNvbW11bml0eSUyMGV2ZW50fGVufDF8fHx8MTc3MjczNjA3NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 
     return (
-        <section className="py-24 px-6 bg-gradient-to-b from-white to-gray-50">
+        <section id="comunidad" className="py-24 px-6 bg-gradient-to-b from-white to-gray-50">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
                     {/* Content */}
@@ -66,7 +66,7 @@ export function Community() {
                         </div>
                         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white px-8 py-4 rounded-full shadow-xl border-4 border-gray-50">
                             <p className="text-lg" style={{ fontFamily: 'var(--font-heading)' }}>
-                                <span className="text-rose-500">♥</span> Unidos por la cultura
+                                <span className="text-rose-500">Hecho con ♥</span>
                             </p>
                         </div>
                     </div>

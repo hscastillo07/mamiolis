@@ -3,8 +3,8 @@ import type { NavItem } from "@/types/content";
 export const navigationItems: NavItem[] = [
   { label: "Inicio", href: "#inicio" },
   { label: "Historia", href: "#historia" },
-  { label: "Galeria", href: "#galeria" },
+  { label: "Gastronomía", href: "#gastronomia" },
+  { label: "Escuela", href: "#escuela" },
   { label: "Experiencias", href: "#experiencias" },
-  { label: "Menu", href: "#menu" },
-  { label: "Ubicacion", href: "#ubicacion" },
+  { label: "Comunidad", href: "#comunidad" },
 ];

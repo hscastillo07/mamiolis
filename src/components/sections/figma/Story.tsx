@@ -1,6 +1,6 @@
 export function Story() {
     return (
-        <section className="py-24 px-6 bg-gradient-to-b from-[#FFFAF5] to-[#FFF8F0]">
+        <section id="historia" className="py-24 px-6 bg-gradient-to-b from-[#FFFAF5] to-[#FFF8F0]">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="inline-block mb-4">
