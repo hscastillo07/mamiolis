@@ -7,3 +7,7 @@ coverage
 *.tsbuildinfo
 .env
 .env.local
+docs
+public/documents
+public/favicon
+public/brand
