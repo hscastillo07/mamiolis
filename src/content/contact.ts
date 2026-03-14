@@ -5,7 +5,7 @@ export const contactInfo: ContactLinks = {
   whatsappMessageDefault: "Hola, quiero informacion sobre Mami Oli's / ECOS y disponibilidad.",
   googleMapsUrl: "https://maps.app.goo.gl/a3NyowzEHwyK1Ngk7?g_st=ic",
   menuUrl: "/documents/menu.pdf",
-  instagramUrl: "https://instagram.com/",
+  instagramUrl: "https://www.instagram.com/cocinademamioli?igsh=MTh4cXB6NXlsd2M5bA==",
   facebookUrl: "https://facebook.com/",
   ecosUrl: "https://ecos.example.com",
   address: "CLL 26 #15-124 · Manga, Cartagena, Colombia",

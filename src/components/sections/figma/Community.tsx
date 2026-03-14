@@ -1,6 +1,7 @@
 import { ImageWithFallback } from './ImageWithFallback';
 import placeholder from "../../../assets/mamiolis.jpeg";
 import { FEATURES } from '@/config/features';
+import { contactInfo } from '@/content/contact';
 
 export function Community() {
     return (
@@ -64,7 +65,7 @@ export function Community() {
                             />
                         </div>
                         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white px-8 py-4 rounded-full shadow-xl border-4 border-gray-50">
-                            <p className="text-lg" style={{ fontFamily: 'var(--font-heading)' }}>
+                            <p className="text-lg text-center" style={{ fontFamily: 'var(--font-heading)' }}>
                                 <span className="text-rose-500">Hecho con ♥</span>
                             </p>
                         </div>
@@ -92,9 +93,9 @@ export function Community() {
                     </h5>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         {FEATURES.showCommunityECOSLink && (
-                            <a 
-                                href="https://wa.me/573015059936" 
-                                target="_blank" 
+                            <a
+                                href="https://wa.me/573015059936"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-4 bg-white text-indigo-600 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
                             >
@@ -102,9 +103,14 @@ export function Community() {
                             </a>
                         )}
                         {FEATURES.showCommunityRestaurantLink && (
-                            <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105">
-                                Visitar Mami Oli's
-                            </button>
+                            <a
+                                href={contactInfo.googleMapsUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hidden md:inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-full hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105 text-center"
+                            >
+                                Visitanos
+                            </a>
                         )}
                     </div>
                 </div>

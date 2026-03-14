@@ -1,5 +1,6 @@
 import { FEATURES } from '@/config/features';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { contactInfo } from '@/content/contact';
 
 export function Footer() {
     return (
@@ -23,7 +24,7 @@ export function Footer() {
                                 <a href="#" aria-label="Facebook" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <Facebook className="w-5 h-5" />
                                 </a>
-                                <a href="#" aria-label="Instagram" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                                <a href={contactInfo.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
                                     <Instagram className="w-5 h-5" />
                                 </a>
                                 <a href="#" aria-label="X (Twitter)" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
