@@ -1,12 +1,8 @@
-//import image_64cbde9cf37568216cd021855bbd9cf78db770ba from 'figma:asset/64cbde9cf37568216cd021855bbd9cf78db770ba.png'
-//import image_806b8a262b0fb6c301a55f6f14851b8fa5fa7ac8 from 'figma:asset/806b8a262b0fb6c301a55f6f14851b8fa5fa7ac8.png'
 import { ImageWithFallback } from './ImageWithFallback';
 import placeholder from "../../../assets/mamiolis.jpeg";
 import { FEATURES } from '@/config/features';
 
 export function Restaurant() {
-    const foodImage = "https://images.unsplash.com/photo-1636600631971-f8e7dabb8c32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXRpbiUyMGFtZXJpY2FuJTIwZm9vZCUyMGNvbG9yZnVsfGVufDF8fHx8MTc3MjczNjA3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-
     return (
         <section id="gastronomia" className="py-24 px-6 bg-gradient-to-b from-[#FFF8F0] to-white">
             <div className="max-w-7xl mx-auto">
