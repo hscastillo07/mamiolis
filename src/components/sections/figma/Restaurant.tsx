@@ -52,9 +52,14 @@ export function Restaurant() {
                         </div>
 
                         {FEATURES.showMenuButton && (
-                            <button className="px-8 py-4 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                                Ver menú
-                            </button>
+                            <a
+                                href="https://wa.me/573003819898"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-8 py-4 bg-rose-600 text-white rounded-full hover:bg-rose-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            >
+                                Saber más
+                            </a>
                         )}
                     </div>
 

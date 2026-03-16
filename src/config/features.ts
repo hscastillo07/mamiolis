@@ -8,7 +8,7 @@ export const FEATURES = {
     showHeroVisitButton: false,
 
     // Restaurant Actions
-    showMenuButton: false,
+    showMenuButton: true,
 
     // Language School Actions
     showSchoolMoreInfo: false,

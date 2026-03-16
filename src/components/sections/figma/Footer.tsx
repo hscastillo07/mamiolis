@@ -75,7 +75,7 @@ export function Footer() {
                         </div>
                         <div>
                             <h5 className="text-white mb-2">📞 Contacto</h5>
-                            <p className="text-sm">WhatsApp:<br />Español: 301 5059936<br />English: 301 5109948<br />info@ecos-mamiolis.com</p>
+                            <p className="text-sm">WhatsApp ECOS:<br />Español: 301 5059936<br />English: 301 5109948<br /> <br />MamiOlis: 300 3819898<br />info@ecos-mamiolis.com</p>
                         </div>
                         <div>
                             <h5 className="text-white mb-2">🕐 Horarios</h5>
